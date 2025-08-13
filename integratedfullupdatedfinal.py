@@ -19,7 +19,7 @@ from threading import Thread, Lock
 import queue
 import json
 from obstacle_llm import SimpleTokenizer, SimpleObstacleLLM
-from PyQt5.QtWidgets import QLabel
+from PyQt5.QtWidgets import QLabel, QWidget
 from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal, QRect
 from PyQt5.QtGui import QFont, QColor, QImage, QPixmap
 
@@ -1536,6 +1536,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
