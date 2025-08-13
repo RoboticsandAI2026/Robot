@@ -12,4 +12,7 @@ libxcb-sync1
 libxcb-xfixes0
 libgl1-mesa-glx
 libglib2.0-0
+libxkbcommon-x11-0
+libfontconfig1
+libfreetype6
 procps
