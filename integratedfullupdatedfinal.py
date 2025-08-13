@@ -19,7 +19,7 @@ from threading import Thread, Lock
 import queue
 import json
 from obstacle_llm import SimpleTokenizer, SimpleObstacleLLM
-from PyQt5.QtWidgets import QLabel, QWidget, QMainWindow
+from PyQt5.QtWidgets import QLabel, QWidget, QMainWindow, QApplication
 from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal, QRect
 from PyQt5.QtGui import QFont, QColor, QImage, QPixmap
 
@@ -1522,7 +1522,7 @@ def main():
         return
 
     
-    
+    app = QApplication(sys.argv)
     def launch_robot_system():
         
         main_window = RobotVoiceCommandSystem()
