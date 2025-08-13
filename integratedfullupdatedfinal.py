@@ -1443,7 +1443,7 @@ class RobotVoiceCommandSystem(QMainWindow):
             <p><b>Command:</b> '{recognized_text}'</p>
             <div style="background-color: #e8f4ff; border-left: 4px solid #0275d8; padding: 10px; margin: 10px 0;">
                 <p style="font-family: 'Courier New', monospace; font-size: 14px; color: #0275d8;">
-                {robot_response.replace('\n', '<br>')}
+                
                 </p>
             </div>
             <p><i>Command executed at: {time.strftime("%H:%M:%S")}</i></p>
@@ -1538,3 +1538,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
