@@ -10,3 +10,5 @@ libxcb-render-util0
 libxcb-shape0
 libxcb-sync1
 libxcb-xfixes0
+libgl1-mesa-glx
+libglib2.0-0
