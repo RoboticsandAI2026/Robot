@@ -19,7 +19,7 @@ from threading import Thread, Lock
 import queue
 import json
 from obstacle_llm import SimpleTokenizer, SimpleObstacleLLM
-from PyQt5.QtWidgets import Qlabel
+from PyQt5.QtWidgets import QLabel
 
 
 # Suppress warnings
@@ -1534,6 +1534,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
