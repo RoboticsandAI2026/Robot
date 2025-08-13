@@ -23,13 +23,7 @@ from obstacle_llm import SimpleTokenizer, SimpleObstacleLLM
 # Suppress warnings
 warnings.filterwarnings("ignore")
 
-from PyQt5.QtWidgets import (QApplication, QWidget, QVBoxLayout, QHBoxLayout, 
-                           QPushButton, QLabel, QFileDialog, QMainWindow, 
-                           QTextEdit, QProgressBar, QGroupBox, QComboBox,
-                           QCheckBox, QRadioButton, QButtonGroup, QSplitter,
-                           QSpacerItem, QSizePolicy, QTabWidget, QFrame, QLineEdit)
-from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal, QRect
-from PyQt5.QtGui import QFont, QColor, QImage, QPixmap
+
 
 # Import robot command functionality from robot_llm
 try:
@@ -1538,4 +1532,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
