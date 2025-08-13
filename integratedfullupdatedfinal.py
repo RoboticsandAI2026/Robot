@@ -1430,8 +1430,14 @@ class RobotVoiceCommandSystem(QMainWindow):
         if "robot_response" in result:
             robot_response = result["robot_response"]
             command_text = result.get("command_text", recognized_text)
-            
+           
             # Format robot response with colors
+          # Precompute to avoid backslash in f-string
+            formatted_response = robot_response.replace('\n', '<br>')
+
+
+
+            
             robot_html = f"""
             <h3>Robot Command Execution:</h3>
             <p><b>Command:</b> '{recognized_text}'</p>
@@ -1530,4 +1536,5 @@ def main():
     sys.exit(app.exec_())
 
 if __name__ == "__main__":
+
     main()
