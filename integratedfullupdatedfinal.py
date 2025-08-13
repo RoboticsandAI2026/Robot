@@ -19,7 +19,7 @@ from threading import Thread, Lock
 import queue
 import json
 from obstacle_llm import SimpleTokenizer, SimpleObstacleLLM
-from PyQt5.QtWidgets import QLabel, QWidget, QMainWindow, QApplication
+from PyQt5.QtWidgets import QLabel, QWidget, QMainWindow
 from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal, QRect
 from PyQt5.QtGui import QFont, QColor, QImage, QPixmap
 
@@ -1521,10 +1521,10 @@ def main():
         print("TensorFlow not properly installed. Please install TensorFlow.")
         return
 
-    app = QApplication(sys.argv)
-    global main_window  # <<< ADD THIS
+    
+    
     def launch_robot_system():
-        global main_window  # <<< ADD THIS
+        
         main_window = RobotVoiceCommandSystem()
         main_window.showFullScreen()
 
@@ -1536,6 +1536,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
