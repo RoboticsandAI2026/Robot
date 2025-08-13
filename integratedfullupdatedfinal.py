@@ -19,13 +19,7 @@ from threading import Thread, Lock
 import queue
 import json
 from obstacle_llm import SimpleTokenizer, SimpleObstacleLLM
-from PyQt5.QtWidgets import (QApplication, QWidget, QVBoxLayout, QHBoxLayout, 
-                           QPushButton, QLabel, QFileDialog, QMainWindow, 
-                           QTextEdit, QProgressBar, QGroupBox, QComboBox,
-                           QCheckBox, QRadioButton, QButtonGroup, QSplitter,
-                           QSpacerItem, QSizePolicy, QTabWidget, QFrame, QLineEdit)
-from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal, QRect
-from PyQt5.QtGui import QFont, QColor, QImage, QPixmap
+from PyQt5.QtWidgets import Qlabel
 
 
 # Suppress warnings
@@ -1540,6 +1534,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
